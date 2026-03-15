@@ -112,4 +112,30 @@ sequenceDiagram
 2. 選んだスキルの詳細フロー（セクション1,2,4）を参照し、どの工程が自動化されているか把握する。
 3. レビュー時は、図を見ながら「どのステップで問題が起きたか」「自動修正の上限に達したか」を共有するとスムーズです。
 
-必要に応じて、今後は `/resume-session` や `/branch-name-helper` など他スキルの図も追記できます。
+## 6. `/resume-session` で中断セッションを再開
+
+途中で離席した開発内容を再開する際の流れです。保存済みのメタデータ（Issue番号、ブランチ、PR番号など）を読み込み、手元の状態を復元した上で次のアクションを提案します。
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Dev as 開発者
+    participant CLI as AI CLI
+    participant Repo as ローカルGit
+    participant GH as GitHub
+
+    Dev->>CLI: /resume-session
+    CLI->>CLI: 前回セッション情報を読み込み (~/.claude/last-session など)
+    alt 保存済みセッションあり
+        CLI->>Repo: git fetch origin
+        CLI->>Repo: git checkout <saved-branch>
+        CLI->>GH: gh pr view <saved-pr> --json ...
+        CLI->>Dev: Issue/PR/タスクのサマリーを提示
+        Dev-->>CLI: 続行指示 (例: 実装再開/レビュー/マージ)
+        CLI->>Dev: 次の推奨コマンドを案内（cxc, cxcp, cxpr など）
+    else セッションなし
+        CLI-->>Dev: 再開できるセッションはありませんと通知
+    end
+```
+
+今後は `/branch-name-helper` など他スキルの図も追記していきます。

@@ -84,7 +84,7 @@ skills/sources/          # マスターファイル（ここを編集）
 
 #### 📈 フロー／シーケンス図
 
-- [スキル活用シーケンス図](docs/skill-sequence-diagrams.md): `/auto-implement-issue` の全自動フロー、`/implement-issue` の確認プロセス、条件分岐チャート、`/merge-pr` のマージ前チェックをMermaidで整理
+- [スキル活用シーケンス図](docs/skill-sequence-diagrams.md): `/auto-implement-issue` の全自動フロー、`/implement-issue` の確認プロセス、条件分岐チャート、`/merge-pr` のマージ前チェック、`/resume-session` の再開手順をMermaidで整理
 
 ### 🏗️ プロジェクト管理
 
