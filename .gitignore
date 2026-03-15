@@ -7,3 +7,8 @@
 
 # Personal settings (if any)
 *.local.*
+
+# Generated skill copies (master files live in skills/sources/)
+claude/commands/*.md
+codex/prompts/*.md
+!codex/prompts/README.md
