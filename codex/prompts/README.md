@@ -49,6 +49,12 @@ source ~/.zshrc
 | `codex-close-issue <番号>` | `cxci 123` | Issueをコメント付きでクローズ |
 | `close-issue <番号>` | - | 同上（エイリアス） |
 
+### ⚙️ GitHub Actions
+
+| コマンド | 説明 |
+|---------|------|
+| `codex setup-auto-close-pr` | PRがApproveされたら連動PRを自動クローズするワークフローを設定 |
+
 ---
 
 ## 基本的な Git ワークフロー
