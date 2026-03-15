@@ -42,6 +42,12 @@ Claude Code で使える Git ワークフロー自動化スキルの完全ガイ
 | `/start-impl` | 新機能の実装セッションを開始 |
 | `/update-ai-guide` | セッション内容からai-guideを自動更新 |
 
+### ⚙️ GitHub Actions
+
+| スキル | 説明 |
+|-------|------|
+| `/setup-auto-close-pr` | PRがApproveされたら連動PRを自動クローズするワークフローを設定 |
+
 ---
 
 ## 基本的な使い方
