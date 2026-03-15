@@ -83,6 +83,9 @@ claude/commands/ と codex/prompts/ に自動配布
   - `claude/commands/` や `codex/prompts/` を直接編集しても、次回の同期で上書きされます
 - **同期後にコミット**
   - 同期スクリプト実行後、Git コミットを忘れずに
+- **コピー先は Git 管理対象外**
+  - `claude/commands/*.md` と `codex/prompts/*.md`（README を除く）は `.gitignore` 済みで、`sync-skills.sh` が毎回生成します
+  - スキルファイルの差分レビューは `skills/sources/` のみで行います
 
 ## トラブルシューティング
 

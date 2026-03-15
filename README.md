@@ -42,6 +42,8 @@ skills/sources/          # マスターファイル（ここを編集）
 2. `./sync-skills.sh` を実行して同期
 3. コミット
 
+`claude/commands/*.md` と `codex/prompts/*.md` は同期スクリプトが生成するため Git では追跡しません（`.gitignore` に登録済み）。コードレビュー対象は `skills/sources/` のみなので、コピー先は直接編集しないでください。
+
 詳細は [skills/README.md](skills/README.md) を参照してください。
 
 ---
