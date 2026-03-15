@@ -1,5 +1,5 @@
 ---
-description: 変更をコミット（AIがメッセージ生成）
+description: "変更をコミット（AIがメッセージ生成）"
 allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git log:*), Bash(git add:*), Bash(git commit:*), Bash(git rm:*)
 ---
 

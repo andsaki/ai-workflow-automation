@@ -1,5 +1,5 @@
 ---
-description: GitHub issueを完全自動で実装（使用例: /auto-implement-issue 123）
+description: "GitHub issueを完全自動で実装（使用例: /auto-implement-issue 123）"
 allowed-tools: Bash(git:*), Bash(gh:*), Bash(npm:*), Bash(npx:*), Read, Write, Edit, Glob, Grep
 ---
 

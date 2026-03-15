@@ -1,5 +1,5 @@
 ---
-description: プルリクエストをコメント付きでクローズ
+description: "プルリクエストをコメント付きでクローズ"
 argument-hint: <PR番号> [理由]
 allowed-tools: Read, Bash(gh:*), Bash(git:*)
 ---

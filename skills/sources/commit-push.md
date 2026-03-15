@@ -1,5 +1,5 @@
 ---
-description: コミット＋プッシュを一括実行
+description: "コミット＋プッシュを一括実行"
 allowed-tools: Bash(git:*)
 ---
 

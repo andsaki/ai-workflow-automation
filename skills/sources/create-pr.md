@@ -1,5 +1,5 @@
 ---
-description: 現在のブランチ変更からPRを自動生成
+description: "現在のブランチ変更からPRを自動生成"
 argument-hint: [issue-number]
 allowed-tools: Read, Bash(git:*), Bash(gh:*), Edit
 ---

@@ -1,5 +1,5 @@
 ---
-description: PRをマージ（Issue自動クローズ対応）
+description: "PRをマージ（Issue自動クローズ対応）"
 argument-hint: [PR番号]
 allowed-tools: Bash(gh:*), Bash(git:*)
 ---

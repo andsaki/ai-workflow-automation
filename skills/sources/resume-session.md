@@ -1,5 +1,5 @@
 ---
-description: セッション履歴を確認して前回の作業を再開。中断した作業の続きを効率的に開始します。
+description: "セッション履歴を確認して前回の作業を再開。中断した作業の続きを効率的に開始します。"
 allowed-tools: Bash(git:*), Bash(ls:*), Bash(find:*), Read
 ---
 

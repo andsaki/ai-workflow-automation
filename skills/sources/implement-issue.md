@@ -1,5 +1,5 @@
 ---
-description: GitHub issueを読んで実装を自動実行（使用例: /implement-issue 123）
+description: "GitHub issueを読んで実装を自動実行（使用例: /implement-issue 123）"
 allowed-tools: Bash(git:*), Bash(gh:*), Bash(npm:*), Bash(npx:*), Read, Write, Edit, Glob, Grep
 ---
 

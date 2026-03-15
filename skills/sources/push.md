@@ -1,5 +1,5 @@
 ---
-description: 現在のブランチをリモートにプッシュ
+description: "現在のブランチをリモートにプッシュ"
 allowed-tools: Bash(git push:*), Bash(git status:*), Bash(git log:*)
 ---
 

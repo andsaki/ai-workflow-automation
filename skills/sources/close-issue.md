@@ -1,5 +1,5 @@
 ---
-description: GitHub issueをコメント付きでクローズ（使用例: /close-issue 123）
+description: "GitHub issueをコメント付きでクローズ（使用例: /close-issue 123）"
 allowed-tools: Bash(gh:*)
 ---
 
