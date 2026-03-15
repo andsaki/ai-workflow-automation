@@ -64,7 +64,7 @@ sequenceDiagram
 flowchart TD
     Start([作業開始]) --> Issue{Issueはある？}
     Issue -->|Yes| Size{変更規模は？}
-    Issue -->|No| Manual[/cxb → cxc/cxcp → cxpr/]
+    Issue -->|No| Manual[/cxb → 編集 → cxc/cxcp → cxpr → cxm/]
 
     Size -->|小 (1-2ファイル)| Auto[/auto-implement-issue/]
     Size -->|中 (3-10ファイル)| Choice{確認は必要？}
@@ -73,9 +73,9 @@ flowchart TD
     Choice -->|Yes| Implement[/implement-issue/]
     Choice -->|No| Auto
 
-    Manual --> AfterManual[/cxb → 編集 → cxc/cxcp → cxpr → cxm/]
-    Auto --> AfterAuto([PR & Issue 更新])
-    Implement --> AfterImpl([PR & Issue 更新])
+    Manual --> Done([PR & Issue 更新])
+    Auto --> Done
+    Implement --> Done
 ```
 
 ## 4. `/merge-pr` のマージ前チェック
