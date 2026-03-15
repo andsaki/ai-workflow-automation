@@ -26,6 +26,24 @@ Claude Code と Codex CLI で使える Git ワークフロー自動化スキル/
 
 このアプローチにより、スキルを一箇所で管理し、複数の開発リポジトリで再利用できます。
 
+### スキルファイルの一元管理
+
+このリポジトリでは、スキルファイル（`.md`）を以下のように管理しています：
+
+```
+skills/sources/          # マスターファイル（ここを編集）
+  ↓ ./sync-skills.sh
+├─ claude/commands/     # Claude Code 用（自動生成）
+└─ codex/prompts/       # Codex CLI 用（自動生成）
+```
+
+**スキルを編集する場合**:
+1. `skills/sources/*.md` を編集
+2. `./sync-skills.sh` を実行して同期
+3. コミット
+
+詳細は [skills/README.md](skills/README.md) を参照してください。
+
 ---
 
 ## 📋 目次
