@@ -65,8 +65,6 @@ flowchart TD
     Start([作業開始]) --> Issue{Issueはある？}
     Issue -->|Yes| Size{変更規模は？}
     Issue -->|No| Manual[/cxb -> 編集 -> cxc/cxcp -> cxpr -> cxm/]
-    
-
     Size -->|小 (1-2ファイル)| Auto[/auto-implement-issue/]
     Size -->|中 (3-10ファイル)| Choice{確認は必要？}
     Size -->|大 (10ファイル以上)| Manual
