@@ -82,6 +82,10 @@ skills/sources/          # マスターファイル（ここを編集）
 | `/auto-implement-issue <番号>` | Issue完全自動実装 |
 | `/close-issue <番号>` | Issueをコメント付きでクローズ |
 
+#### 📈 フロー／シーケンス図
+
+- [スキル活用シーケンス図](docs/skill-sequence-diagrams.md): `/auto-implement-issue` の全自動フロー、`/implement-issue` の確認プロセス、条件分岐チャート、`/merge-pr` のマージ前チェックをMermaidで整理
+
 ### 🏗️ プロジェクト管理
 
 | スキル | 説明 |
