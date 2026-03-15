@@ -50,6 +50,7 @@ Claude Code と Codex CLI で使える Git ワークフロー自動化スキル/
 | `/push` | 現在のブランチをリモートにプッシュ |
 | `/commit-push` | コミット＋プッシュを一括実行 |
 | `/create-pr` | AIがPRタイトル・本文を生成してPR作成 |
+| `/merge-pr <番号>` | PRをマージ（Issue自動クローズ対応） |
 | `/branch-name-helper` | 変更内容から適切なブランチ名を提案・作成 |
 | `/resume-session` | 前回のセッションを再開 |
 
@@ -67,12 +68,6 @@ Claude Code と Codex CLI で使える Git ワークフロー自動化スキル/
 |-------|------|
 | `/start-impl` | 新機能の実装セッションを開始 |
 | `/update-ai-guide` | セッション内容からai-guideを自動更新 |
-
-### ⚙️ GitHub Actions
-
-| スキル | 説明 |
-|-------|------|
-| `/setup-auto-close-pr` | PRがApproveされたら連動PRを自動クローズするワークフローを設定 |
 
 ---
 

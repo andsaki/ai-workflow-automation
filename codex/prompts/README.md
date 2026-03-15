@@ -62,6 +62,7 @@ source ~/.zshrc
 | `codex-push` | `cxp` | 現在のブランチをリモートにプッシュ |
 | `codex-commit-push` | `cxcp` | コミット＋プッシュを一括実行 |
 | `codex-create-pr` | `cxpr` | AIがPRタイトル・本文を生成してPR作成 |
+| `codex-merge-pr <番号>` | `cxm 123` | PRをマージ（Issue自動クローズ対応） |
 | `codex-branch` | `cxb` | 変更内容から適切なブランチ名を提案・作成 |
 | `codex-resume` | `cxr` | 前回のセッションを再開 |
 
@@ -74,12 +75,6 @@ source ~/.zshrc
 | `codex-auto-implement-issue <番号>` | `cxai 123`, `aii 123` | Issue完全自動実装 |
 | `codex-close-issue <番号>` | `cxci 123` | Issueをコメント付きでクローズ |
 | `close-issue <番号>` | - | 同上（エイリアス） |
-
-### ⚙️ GitHub Actions
-
-| コマンド | 説明 |
-|---------|------|
-| `codex setup-auto-close-pr` | PRがApproveされたら連動PRを自動クローズするワークフローを設定 |
 
 ---
 
