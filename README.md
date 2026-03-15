@@ -1,6 +1,32 @@
-# Claude Code カスタムスキル 使い方ガイド
+# AI Workflow Automation
 
-Claude Code で使える Git ワークフロー自動化スキルの完全ガイドです。
+Claude Code と Codex CLI で使える Git ワークフロー自動化スキル/プロンプトの管理リポジトリです。
+
+## 🎯 このリポジトリについて
+
+このリポジトリは **AIスキルとプロンプトを管理するための専用リポジトリ** です。
+
+### 重要な設計思想
+
+- ✅ このリポジトリには **AIスキルの定義ファイル** のみを管理します
+- ✅ スキルを実行すると、**開発リポジトリ** にワークフローファイルやコードを生成します
+- ❌ このリポジトリ自体に `.github/workflows/` や実装コードは置きません
+
+### 具体例
+
+例えば `/setup-auto-close-pr` スキルの場合：
+
+```
+このリポジトリ (ai-workflow-automation):
+  └── claude/commands/setup-auto-close-pr.md  ← スキル定義のみ
+
+開発リポジトリ (your-project):
+  └── .github/workflows/auto-close-linked-pr.yml  ← スキル実行で生成される
+```
+
+このアプローチにより、スキルを一箇所で管理し、複数の開発リポジトリで再利用できます。
+
+---
 
 ## 📋 目次
 
